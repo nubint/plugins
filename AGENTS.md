@@ -14,7 +14,12 @@ This is the production service. The plugin does not install any backend. Do not 
 
 ## 1. Identify the host
 
-- **Codex** (CLI or desktop app): check `codex --version` and `codex plugin --help`. The shell CLI and the desktop app may differ in version; if the CLI lacks plugin commands, use the desktop Plugins UI.
+- **Codex** (CLI or desktop app): use the Codex CLI that belongs to this host, not just the first `codex` on `PATH` — an older standalone CLI installed separately (for example through npm) often shadows it and has no plugin commands. Pick the first of these that answers `plugin --help`:
+  1. the path in the `CODEX_CLI_PATH` environment variable, when set;
+  2. the CLI bundled with the desktop app — Windows: the newest `%LOCALAPPDATA%\OpenAI\Codex\bin\*\codex.exe`; macOS: `codex` inside the app bundle (`/Applications/ChatGPT.app` or `/Applications/Codex.app`, search `Contents/` for it);
+  3. `codex` on `PATH`.
+
+  Use that same executable for every command below. Do not install or upgrade a CLI. Only if none of them has plugin commands, use the desktop Plugins UI.
 - **Claude Code** (CLI, IDE extension or desktop app): check `claude --version` and `claude plugin --help`, or use the `/plugin` command inside a session.
 
 If the same plugin is already installed and enabled from this repository, reuse it. If a marketplace with the same name points elsewhere, explain the collision instead of replacing it. Preserve unrelated plugins, MCP servers and credentials.
@@ -39,7 +44,7 @@ Verify the installed plugin's identity, enabled state and version against the ma
 
 ## 3. Connect and authenticate
 
-Nubint uses OAuth in the browser. Start the host's connection flow for this plugin's `nubint` server — in Claude Code run `/mcp`, select the Nubint server and authenticate; in Codex use the plugin's Connect / Authorize step. The user signs in to Nubint and clicks Allow on the consent page. Never ask the user to paste a password, token or API key into the conversation.
+Nubint uses OAuth in the browser. Start the host's connection flow for this plugin's `nubint` server — in Claude Code run `/mcp`, select the Nubint server and authenticate; in Codex run `codex mcp login nubint` with the same CLI as above (it prints and opens the sign-in URL and waits for the browser to come back; if it times out, run it again), or use the plugin's Connect / Authorize step in the desktop app. The user signs in to Nubint and clicks Allow on the consent page. Never ask the user to paste a password, token or API key into the conversation.
 
 Before going further, require evidence of BOTH:
 
