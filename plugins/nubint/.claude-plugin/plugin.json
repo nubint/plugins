@@ -1,0 +1,9 @@
+{
+  "name": "nubint",
+  "version": "0.1.0",
+  "description": "Review manuscripts, verify references, find real papers, edit Nubint documents side by side and make scientific figures with Nubint.",
+  "author": { "name": "Nubint Inc.", "url": "https://nubint.ai" },
+  "homepage": "https://nubint.ai",
+  "repository": "https://github.com/nubint/plugins",
+  "keywords": ["research", "academic-writing", "peer-review", "citations", "scientific-figures", "literature-review"]
+}

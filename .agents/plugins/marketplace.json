@@ -1,0 +1,20 @@
+{
+  "name": "nubint-marketplace",
+  "interface": {
+    "displayName": "Nubint Marketplace"
+  },
+  "plugins": [
+    {
+      "name": "nubint",
+      "source": {
+        "source": "local",
+        "path": "./plugins/nubint"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

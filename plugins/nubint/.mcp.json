@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "nubint": {
+      "type": "http",
+      "url": "https://api.nubint.ai/api/v1/mcp"
+    }
+  }
+}

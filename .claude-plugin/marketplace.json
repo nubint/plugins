@@ -1,0 +1,14 @@
+{
+  "name": "nubint-marketplace",
+  "description": "Nubint plugins for Claude Code and Codex",
+  "owner": { "name": "Nubint Inc.", "url": "https://nubint.ai" },
+  "plugins": [
+    {
+      "name": "nubint",
+      "source": "./plugins/nubint",
+      "description": "Review manuscripts, verify references, find real papers, edit Nubint documents side by side and make scientific figures.",
+      "version": "0.1.0",
+      "category": "productivity"
+    }
+  ]
+}
