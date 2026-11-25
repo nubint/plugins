@@ -5,7 +5,7 @@ description: Find real scholarly papers with Nubint's index, save them to the us
 
 # Literature with Nubint
 
-## Search first — it is instant and free
+## Search first — it is instant and uses no credits
 
 `search_papers` with `query` (a research question or keywords). Narrow only with what the user asked for: `yearFrom` / `yearTo`, `minCitations`, `openAccessOnly`, `excludeRetracted`, `sort`. Each result has `id`, title, year, authors, venue, DOI, citation count and, when indexed, the passage that matches the query. Every result is a real, indexed paper — cite only papers that came back from a tool, never from memory.
 
@@ -18,6 +18,4 @@ When the user wants a paper added to their `.bib` or reference list, build the e
 
 ## A cited literature review
 
-`start_literature_review` with `question`, optional `depth`, `language` (the user's language) and an `idempotencyKey`. Credits, Starter plan and above — state the cost before starting. It returns a `taskId`; poll `get_task` every 15–30 seconds until done, never start it twice, and after about 20 minutes give the user the result url. Report the review with its citations as returned.
-
-Systematic reviews (protocol, screening, synthesis) and data-extraction tables are being prepared for launch and are not available yet. Say so plainly and offer a literature review or a paper search instead; do not imitate them with other tools.
+`start_literature_review` with `question`, optional `depth`, `language` (the user's language) and an `idempotencyKey`. Credits — state the cost before starting. It returns a `taskId`; poll `get_task` every 15–30 seconds until done, never start it twice, and after about 20 minutes give the user the result url. Report the review with its citations as returned.
