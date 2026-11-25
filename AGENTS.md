@@ -8,7 +8,7 @@ This page is for an AI agent. Install only when the user explicitly asks to inst
 - Marketplace: `nubint-marketplace` · plugin: `nubint` · qualified id: `nubint@nubint-marketplace`
 - Codex manifests: `.agents/plugins/marketplace.json`, `plugins/nubint/.codex-plugin/plugin.json`
 - Claude Code manifests: `.claude-plugin/marketplace.json`, `plugins/nubint/.claude-plugin/plugin.json`
-- Shared by both: `plugins/nubint/.mcp.json` (remote MCP server `nubint` at `https://api.nubint.ai/api/v1/mcp`) and five skills in `plugins/nubint/skills/`
+- Shared by both: `plugins/nubint/.mcp.json` (remote MCP server `nubint` at `https://api.nubint.ai/api/v1/mcp`) and four skills in `plugins/nubint/skills/`
 
 This is the production service. The plugin does not install any backend. Do not substitute another URL or create a second, standalone MCP registration for the same server.
 
@@ -59,11 +59,11 @@ If the user asked to set up a new task or conversation, read `interface.defaultP
 
 ## 5. Report
 
-Report only what you observed: installed version, connection and plan state, and any step the user still has to do. Do not create documents, figures or reviews, and do not spend credits as part of installation.
+Report only what you observed: installed version, connection and plan state, and any step the user still has to do. Do not create documents or reviews, and do not spend credits as part of installation.
 
 ## Plans and credits
 
-Searching papers and the library, saving a manuscript, listing and reading documents and reference verification work on every Nubint plan, free included. Reviews, figures, literature reviews and document edits spend credits and need the Starter plan or above. An error about plan, credits or rate limits is written for the user — relay it as it is.
+Every tool needs the Starter plan or above. On the Free plan the connection works, and every tool — `get_credits` included — answers with a plan notice; that notice still shows the account is connected. Searching papers and the library, saving a manuscript, listing, reading and editing documents and reference verification use no credits. Reviews, AI-writing detection, source quality and literature reviews spend credits. An error about plan, credits or rate limits is written for the user — relay it as it is.
 
 ## Troubleshooting
 

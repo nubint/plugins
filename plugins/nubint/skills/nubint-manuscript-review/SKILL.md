@@ -14,8 +14,8 @@ description: Check or review a research manuscript with Nubint — reference ver
 ## 2. Quick checks (nothing saved)
 
 `run_manuscript_check` with `text`, `references` and `checks`:
-- `reference_verification` — does each reference exist in a scholarly index. **No credits, any plan.** For a reference list alone, pass only `references` and this check.
-- `ai_detection`, `source_quality` — credits, Starter plan and above.
+- `reference_verification` — does each reference exist in a scholarly index. **No credits.** For a reference list alone, pass only `references` and this check.
+- `ai_detection`, `source_quality` — credits.
 
 Report each result as it is. `off_index` means "not found in the index", **not** fabricated — books, statutes and many regional journals are simply absent. Never call a reference fake from this tool alone; for `uncertain`, show `matchedTitle` so the user can compare.
 

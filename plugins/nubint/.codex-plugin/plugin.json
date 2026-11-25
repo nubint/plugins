@@ -1,15 +1,15 @@
 {
   "name": "nubint",
-  "version": "0.1.0",
-  "description": "Review manuscripts, verify references, find real papers, edit Nubint documents side by side and make scientific figures with Nubint.",
+  "version": "0.2.0",
+  "description": "Review manuscripts, verify references, find real papers, write cited literature reviews and edit Nubint documents side by side with Nubint.",
   "author": {
     "name": "Nubint Inc."
   },
   "skills": "./skills/",
   "interface": {
     "displayName": "Nubint",
-    "shortDescription": "Research writing: review manuscripts, verify references, find papers, make figures.",
-    "longDescription": "Nubint is an AI research-writing workspace with a scholarly paper index. Check that every reference is real, run peer review and claim-credibility reviews on a manuscript, search and save real papers, propose edits to a document open in the Nubint editor, and make publication-ready illustrations, flowcharts and charts from real data.",
+    "shortDescription": "Research writing: review manuscripts, verify references, find papers, edit documents.",
+    "longDescription": "Nubint is an AI research-writing workspace with a scholarly paper index. Check that every reference is real, run peer review and claim-credibility reviews on a manuscript, search and save real papers, write a cited literature review, and propose edits to a document open in the Nubint editor.",
     "developerName": "Nubint Inc.",
     "category": "Productivity",
     "capabilities": [

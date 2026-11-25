@@ -6,7 +6,6 @@ Use [Nubint](https://nubint.ai) — an AI research-writing workspace with a scho
 - Run peer review, claim-credibility, source-quality and proofreading reviews
 - Find and save real papers, and run a cited literature review
 - Propose edits to a document open in the Nubint editor — you accept or reject each one
-- Make scientific illustrations, flowcharts and charts from your real data
 
 ## Install
 
@@ -27,7 +26,7 @@ Then sign in to Nubint when the app asks (OAuth).
 
 ## Plans
 
-Paper search, saving manuscripts, reading your documents and reference verification work on the free plan. Reviews, figures, literature reviews and document edits use credits and need the Starter plan or above.
+Every tool needs the Starter plan or above — on the Free plan you can connect, and each tool answers with a plan notice. Paper and library search, saving manuscripts, reading and editing your documents and reference verification use no credits. Reviews, AI-writing detection, source quality and literature reviews use credits.
 
 ## Contents
 
